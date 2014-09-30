@@ -52,3 +52,13 @@ div {
 }
 /* Temporary end
 */
+
+/* Navigation Section */
+.top-navigation {
+    background-color: #ffffff;
+}
+.top-navigation > .content {
+    width: 970px;
+    height: 70px;
+    margin: 0 auto;
+}
