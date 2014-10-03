@@ -37,6 +37,7 @@ ol, ul {
 /* Start of Custom Styles */
 body {
     font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 .content {
     box-sizing: border-box;
@@ -47,6 +48,9 @@ body {
 /* Navigation Section */
 .top-navigation {
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid #DDD;
 }
 .top-navigation > .content {
     height: 70px;
@@ -59,7 +63,6 @@ body {
     color: #838994;
     font-size: 16px;
     margin-top: 25px;
-    -webkit-font-smoothing: antialiased;
 }
 .top-navigation .links li {
     display: inline-block;
@@ -75,23 +78,109 @@ body {
 }
 /* Introduction Section */
 .introduction {
-    background-image: url(../img/first-background.jpg); 
+    background-image: url('../img/first-background.jpg');
+    background-position: center bottom;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;  
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 610px;
+    background-size: cover;
+    height: 735px;
+    overflow: auto;
 }
 .introduction > .content {
     color: #ffffff;
-    padding: 160px 0;
 }
-.introduction > .content > .h1 {
-     text-align: center;
+.introduction > .content > h1 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 280px;
+    font-size: 50px;
 }
-.introduction > .content > .h3 {
-    
+.introduction > .content > h3 {
+    color: white;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 20px;
+    font-size: 25px;
+}
+/**
+ * The buttons
+ */
+.introduction .buttons {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+}
+.introduction .half {
+    width: 45%;
+    padding: 0 15px;
+    display: inline-block;
+    vertical-align: bottom;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.half.learn {
+    text-align: right;
+}
+.half.watch {
+    text-align: left;
+    padding: 16px 24px;
+    font-weight: 500;
+}
+.introduction .learn button {
+    width: 155px;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    color: white;
+    font-size: 18px;
+}
+:focus {
+    outline: none;
+}
+.introduction .learn button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
+.introduction .watch img {
+    position: relative;
+    top: 10px;
+}
+/**
+ * The Three Case Images
+ */
+.cases {
+    background-color: #fff;
+    overflow: hidden;
+    padding-bottom: 160px;
+}
+.cases .content {
+    margin-top: 126px;
+    padding: none;
+    color: #1d1e21;
+    text-align: center;
+}
+.cases h2 {
+    font-size: 44px;
+    margin: 26px 0 50px;
+    font-weight: 300;
+}
+.cases .devices {
+    display: flex;
+}
+.cases .devices > li {
+    width: 33.3333333%;
+}
+.cases .devices h3 {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 40px 0px 30px;
+
+}
+.cases .devices p {
+    font-weight: 300;
+    font-size: 21px;
 }
