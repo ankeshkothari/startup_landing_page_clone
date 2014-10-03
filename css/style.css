@@ -225,3 +225,54 @@ body {
     font-weight: 300;
     color: #838994;
 }
+/* Karma Section */
+.karma {
+    background-image: url('../img/buy-now-bg.jpg');
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 735px;
+    overflow: auto;
+}
+.karma .content {
+    margin-top: 150px;
+}
+.karma .karmaspan {
+    width: 33%;
+    float: left;
+}
+.karma .content .karmaspan > h2 {
+    font-weight: 300;
+    font-size: 25px;
+    color: #F05A29;
+    margin-bottom: 21px;
+}
+.karma .content .karmaspan > p {
+    margin-bottom: 21px;
+    line-height: 1.5em;
+}
+/**
+ * The buttons
+ */
+.karma button {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    width: 155px;
+    background-color: #f15a29;
+    border-color: #f15a29;
+    text-shadow: none;
+    border-style: none;
+    border-radius: 4px;
+    padding: 16px 24px;
+    color: white;
+    font-size: 18px;
+}
+:focus {
+    outline: none;
+}
+.karma button:hover {
+    background-color: #d9400e;
+    border-color: #cf3d0e;
+    cursor: pointer;
+}
